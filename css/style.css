@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+:root {
+    --width: 253px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+header {
+    height: 70px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50px 130px 1fr 70px;
+    place-items: center;
+}
+
+.icon {
+    all: unset;
+    height: 70px;
+    width: 120px;
+}
+
+.searchbar {
+    width: 90%;
+    height: 35px;
+    display: grid;
+    grid-template-columns: 94% 1fr;
+    background-color: #ccc;
+    border: 1px solid black;
+}
+
+.searchbar input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.searchbar svg {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    outline: 1px solid black;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figure video {
+    height: 142px;
+    width: var(--width);
+    margin-bottom: 10px;
+}
+
+figcaption {
+    width: var(--width);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cap p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ch-logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.options {
+    height: 20px;
+    width: 20px;
+}
+
+.cap {
+    width: var(--width);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.indicator,
+.chname {
+    width: 100%;
+    font-weight: bolder;
+    font-family: "Roboto", "Arial", sans-serif;
+    opacity: .4;
+    font-size: 14px;
+}
+
+.views {
+    position: relative;
+    margin-right: 7px;
+}
+
+.views::after {
+    content: '.';
+    font-size: 32px;
+    position: absolute;
+    top: -20px;
+}
